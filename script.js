@@ -3,7 +3,7 @@ var button = document.getElementById("clickme"),
 button.onclick = function () {
     count += pwr;
     button.innerHTML = "Cliques: " + count;
-    if (count % 5 === 0) ready = true;
+    if (count % 3 === 0 || count % 5) ready = true;
     if (count >= 500) alert(`Parabéns! ${count} pontos!`)
 };
 

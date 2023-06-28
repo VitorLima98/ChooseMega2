@@ -21,9 +21,7 @@
       font-size: 50px;
       border: 25px;
       line-height: 1.3;
-      height: 100px;
-      padding: 30px;
-      text-align: top;
+      text-align: center;
       color: rgb(0, 0, 0);
     }
 
@@ -44,6 +42,15 @@
       letter-spacing: 5px;
     }
 
+    .container {
+      padding: 32px;
+      margin-left: 60 px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
     .rainbow_text_animated {
       background: repeating-linear-gradient(to left, rgb(30, 90, 30), green, rgb(30, 90, 30), green, rgb(30, 90, 30));
       -webkit-background-clip: text;
@@ -58,6 +65,8 @@
       0% {
         background-position: 800% 0%;
       }
+
+
 
     }
 
@@ -87,18 +96,19 @@
 </head>
 
 <body>
-  <div>
+  <div className="container">
     <h1 class="rainbow rainbow_text_animated">PowerUp</h1>
-  </div>
-  The quick brown fox jumps over the lazy dog
-  <br>
-  <div><button id="clickme">Clique aqui!</button></div>
-
-  Lorem ipsum dolor sit amet. Ut tempore commodi quo molestias consequatur ad adipisci odio a explicabo fugiat vel esse
-  quia ut cumque amet. Et nesciunt pariatur id voluptatum amet in consequatur blanditiis sit dolores doloribus ea
-  voluptatem odio et ducimus galisum.
-
-  <script src="script.js"></script>
+    <span>The quick brown fox jumps over the lazy dog</span>
+    <br><br><br>
+    <div><button id="clickme">Clique aqui!</button></div>
+    <br><br><br>
+    <span>
+      Lorem ipsum dolor sit amet. Ut tempore commodi quo molestias consequatur ad adipisci odio a explicabo fugiat vel
+      esse
+      quia ut cumque amet. Et nesciunt pariatur id voluptatum amet in consequatur blanditiis sit dolores doloribus ea
+      voluptatem odio et ducimus galisum.
+    </span>
+    <script src="script.js"></script>
 </body>
 
 </html>
