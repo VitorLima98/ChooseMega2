@@ -11,7 +11,7 @@
       height: 100vh;
       display: flex;
       align-items: center;
-      background: linear-gradient(to bottom, black, rgb(83, 5, 5), black);
+      background: linear-gradient(to top left, #0f0c29, #302b63, #24243e);
 
 
     }
@@ -19,10 +19,11 @@
     h1 {
       font-family: sans-serif;
       font-size: 50px;
+      border: 25px;
       line-height: 1.3;
-      width: 100%;
+      height: 100px;
       padding: 30px;
-      text-align: center;
+      text-align: top;
       color: rgb(0, 0, 0);
     }
 
@@ -30,16 +31,16 @@
     #shadowBox {
       background-color: rgb(0, 0, 0);
       /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 1);
       /* Black w/opacity/see-through */
-      border: 3px solid;
+      border: 60px solid;
     }
 
     .rainbow {
-      text-align: center;
+      text-align: top;
       font-family: verdana;
       font-size: 80px;
-
+      text-shadow: 5px 5px 0.5px rgba(0, 0, 0, 0.2);
       letter-spacing: 5px;
     }
 
@@ -59,6 +60,26 @@
       }
 
     }
+
+    button {
+      padding: 10px;
+      background: linear-gradient(to bottom, black, rgba(98, 186, 98, 0.412), black);
+      text-shadow: 1px 1px 1px #202020;
+      font-family: verdana;
+      font-size: 18pt;
+      border: 3px solid black;
+      color: white;
+    }
+
+    .B2 {
+      padding: 20px;
+      background: linear-gradient(to bottom, black, blue, black);
+      text-shadow: 1px 1px 1px #202020;
+      font-family: verdana;
+      font-size: 18pt;
+      border: 3px solid black;
+      color: lightblue;
+    }
   </style>
 
 
@@ -66,7 +87,12 @@
 </head>
 
 <body>
-  <h1 class="rainbow rainbow_text_animated">PowerUp</h1>
+  <div>
+    <h1 class="rainbow rainbow_text_animated">PowerUp</h1>
+  </div>
+  <br>
+  <div><button id="clickme">Clique aqui!</button></div>
+
 
   <script src="script.js"></script>
 </body>
