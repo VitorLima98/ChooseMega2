@@ -3,93 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>TESTES JAVASCRIPT</title>
-  <style>
-    body {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(to top left, #0f0c29, #302b63, #24243e);
 
 
-    }
-
-    h1 {
-      font-family: sans-serif;
-      font-size: 50px;
-      border: 25px;
-      line-height: 1.3;
-      text-align: center;
-      color: rgb(0, 0, 0);
-    }
-
-
-    #shadowBox {
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(0, 0, 0, 1);
-      /* Black w/opacity/see-through */
-      border: 60px solid;
-    }
-
-    .rainbow {
-      text-align: top;
-      font-family: verdana;
-      font-size: 80px;
-      text-shadow: 5px 5px 0.5px rgba(0, 0, 0, 0.2);
-      letter-spacing: 5px;
-    }
-
-    .container {
-      padding: 32px;
-      margin-left: 60 px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .rainbow_text_animated {
-      background: repeating-linear-gradient(to left, rgb(30, 90, 30), green, rgb(30, 90, 30), green, rgb(30, 90, 30));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      animation: rainbow_animation 12s linear infinite;
-      background-size: 200% 100%;
-    }
-
-    @keyframes rainbow_animation {
-
-      0% {
-        background-position: 800% 0%;
-      }
-
-
-
-    }
-
-    button {
-      padding: 10px;
-      background: linear-gradient(to bottom, black, rgba(98, 186, 98, 0.412), black);
-      text-shadow: 1px 1px 1px #202020;
-      font-family: verdana;
-      font-size: 18pt;
-      border: 3px solid black;
-      color: white;
-    }
-
-    .B2 {
-      padding: 20px;
-      background: linear-gradient(to bottom, black, blue, black);
-      text-shadow: 1px 1px 1px #202020;
-      font-family: verdana;
-      font-size: 18pt;
-      border: 3px solid black;
-      color: lightblue;
-    }
-  </style>
 
 
 
@@ -97,18 +16,24 @@
 
 <body>
   <div className="container">
-    <h1 class="rainbow rainbow_text_animated">PowerUp</h1>
+    <h1 id="titulo" class="animation-text green_text_animated">PowerUp</h1>
     <span>The quick brown fox jumps over the lazy dog</span>
+
     <br><br><br>
+
     <div><button id="clickme">Clique aqui!</button></div>
+
     <br><br><br>
+
     <span>
       Lorem ipsum dolor sit amet. Ut tempore commodi quo molestias consequatur ad adipisci odio a explicabo fugiat vel
       esse
       quia ut cumque amet. Et nesciunt pariatur id voluptatum amet in consequatur blanditiis sit dolores doloribus ea
       voluptatem odio et ducimus galisum.
     </span>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
